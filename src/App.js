@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import logo from "./logo.svg"
 import "./App.css"
 
-class LambdaDemo extends Component {
+/*class LambdaDemo extends Component {
   constructor(props) {
     super(props)
     this.state = { loading: false, msg: null }
@@ -30,7 +30,7 @@ class LambdaDemo extends Component {
     )
   }
 }
-
+*/
 class App extends Component {
   render() {
     return (
@@ -40,7 +40,8 @@ class App extends Component {
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
-          <LambdaDemo />
+          {/*<LambdaDemo />*/}
+          
         </header>
       </div>
     )
