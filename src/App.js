@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+
 import { Navbar, Nav } from 'react-bootstrap';
 
 import "./App.css"
@@ -18,7 +19,7 @@ class App extends Component {
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-    );
+    )
   }
 }
 
