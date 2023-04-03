@@ -1,22 +1,24 @@
 import React, { Component } from "react"
-import logo from "./logo.svg"
+import { Navbar, Nav } from 'react-bootstrap';
+
 import "./App.css"
 
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          {/*<LambdaDemo />*/}
-          
-        </header>
-      </div>
-    )
+      <Navbar bg="primary" variant="dark" expand="lg">
+      <Navbar.Brand href="#">My App</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="mr-auto">
+          <Nav.Link href="#">Home</Nav.Link>
+          <Nav.Link href="#">About</Nav.Link>
+          <Nav.Link href="#">Contact</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+    );
   }
 }
 
