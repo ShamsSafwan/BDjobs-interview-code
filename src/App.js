@@ -1,6 +1,6 @@
 import React, { Component } from "react"
-import { Navbar, Nav } from 'react-bootstrap';
 
+import { Form } from 'react-bootstrap';
 
 import "./App.css"
 
@@ -8,17 +8,12 @@ import "./App.css"
 class App extends Component {
   render() {
     return (
-      <Navbar bg="primary" variant="dark" expand="lg">
-      <Navbar.Brand className="mx-auto pl-40 " href="#">My App</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-          <Nav.Link href="#">Home</Nav.Link>
-          <Nav.Link href="#">About</Nav.Link>
-          <Nav.Link href="#">Contact</Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+      <Form className="mx-auto" style={{ maxWidth: '80vw' }} >
+      <Form.Group controlId="exampleForm.ControlTextarea1">
+        <Form.Label>Large Text Area</Form.Label>
+        <Form.Control as="textarea" rows={10} />
+      </Form.Group>
+    </Form>
     )
   }
 }
