@@ -12,7 +12,7 @@ class App extends Component {
       <Form.Group controlId="exampleForm.ControlTextarea1">
         <Form.Label>Large Text Area</Form.Label>
         <Form.Control as="textarea" rows={10} />
-      </Form.Group>
+      </Form.Group> 
     </Form>
     )
   }
